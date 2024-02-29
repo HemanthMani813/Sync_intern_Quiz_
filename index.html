@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charSet = "UFT-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE-edge">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1.0">
+        <title>Quiz Website HTML CSS JS</title>
+        <link rel = "stylesheet" href = "index.css">
+    </head>
+    <body>
+        <main class = "main">
+            <header class = "header">
+                <a href = "#" class = "logo">Quiz.</a>
+                <nav class = "navbar">
+                    <a href = "#">Home</a>
+                    <a href = "#">About</a>
+                    <a href = "#">Services</a>
+                    <a href = "#">Contact</a>
+                </nav>
+            </header>
+            <div class = "container">
+                <section class = "quiz-section">
+                    
+                    <div class = "result-box">
+                        <canvas id="canvasluv"></canvas>
+                        <h2>Quiz Result</h2>
+                        <div class = "percentage-container">
+                            <div class = "circular-progress">
+                                <span class = "progress-value">0%</span>
+                            </div>
+                            <span class = "score-text">Your Score 0 out of 5</span>
+                        </div>
+                        <div class = "buttons">
+                            <button class = "tryAgain-btn">Try again</button>
+                            <button class = "goHome-btn">Go To Home</button>
+                        </div>
+                    </div>
+                    <div class = "quiz-box">
+                        <h1>SYNC's Quiz</h1>
+                        <div class = "quiz-header">
+                            <span>Quiz Website Tutorial</span>
+                            <span class = "header-score">Score: 0 / 5</span>
+                        </div>
+                        <h2 class = "question-text">What does HTML stands for?</h2>
+                        <div class = "option-list">
+                            <div class = "option">
+                                <span>A. Hyper Type Multi Language</span>
+                            </div>
+                            <div class = "option">
+                                <span>B. Hyper Type Multiple Language</span>
+                            </div>
+                            <div class = "option">
+                                <span>C. Hyper Text Markup Language</span>
+                            </div>
+                            <div class = "option">
+                                <span>D. Home Text Multi Language</span>
+                            </div>
+                        </div>
+                        <div class = "quiz-footer">
+                            <span class = "question-total">1 of 5 Questions</span>
+                            <button class = "next-btn">Next</button>
+                        </div>
+                    </div>
+                </section>
+                <section class = "home">
+                    <div class = "home-content">
+                        <h1>Quiz Website</h1>
+                        <p> quiz is a form of game or mind sport in which players attempt to answer questions correctly on one or several specific topics. Quizzes can be used as a brief assessment in education and similar fields to measure growth in knowledge, abilities, and skills, or simply as a hobby. They can also be televised for entertainment purposes, often in a game show format.</p>
+                        <button class = "start-btn">Start Quiz</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div class = "popup-info">
+            <h2>Quiz Guide</h2>
+            <span class = "info">1. You will have only 15 seconds.</span>
+            <span class = "info">2. Once you select your answer, you can't reselect.</span>
+            <span class = "info">3. You can't select any option once time goes off.</span>
+            <span class = "info">4. You can't exit from the Quiz while you're playing.</span>
+            <span class = "info">5. You'll get options on the basis of correct answers.</span>
+            <div class = "btn-group">
+                <button class = "info-btn exit-btn">Exit Quiz</button>
+                <a href = "#" class = "info-btn continue-btn">Continue</a>
+            </div>
+        </div>
+    </body>
+    <script src = "index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+
+</html>
